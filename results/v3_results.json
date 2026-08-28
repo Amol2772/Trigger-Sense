@@ -1,0 +1,204 @@
+{
+  "v3_test_eval_segments": {
+    "mAP": 0.6279351295255048,
+    "mAP_ci": [
+      0.5964567711616054,
+      0.6640529085234166
+    ],
+    "micro_f1_flat": 0.5755860953920776,
+    "micro_f1_tuned": 0.6379310344827587,
+    "macro_f1_tuned": 0.5998669865167701,
+    "fp_rate_tuned": 0.365,
+    "fp_rate_safety": 0.274,
+    "micro_f1_safety": 0.6240352811466373,
+    "macro_f1_safety": 0.5760381138039903
+  },
+  "ablation": {
+    "v1": {
+      "data": 300,
+      "params": 200000,
+      "mels": 64,
+      "mAP": 0.549,
+      "micro": 0.565,
+      "macro": 0.575
+    },
+    "v2": {
+      "data": 1200,
+      "params": 200000,
+      "mels": 64,
+      "mAP": 0.535,
+      "micro": 0.587,
+      "macro": 0.553
+    },
+    "v3": {
+      "data": 1200,
+      "params": 2914920,
+      "mels": 128,
+      "mAP": 0.6279351295255048,
+      "micro": 0.6379310344827587,
+      "macro": 0.5998669865167701
+    }
+  },
+  "per_class_v3": {
+    "Scream": {
+      "AP": 0.4198740589019412,
+      "F1_tuned": 0.4297520661157025,
+      "threshold": 0.79,
+      "detection_rate": 0.5,
+      "n_test": 52
+    },
+    "Shout": {
+      "AP": 0.6499570083592736,
+      "F1_tuned": 0.6310679611650486,
+      "threshold": 0.8,
+      "detection_rate": 0.575,
+      "n_test": 113
+    },
+    "Crying": {
+      "AP": 0.763730261716646,
+      "F1_tuned": 0.7073170731707317,
+      "threshold": 0.91,
+      "detection_rate": 0.611,
+      "n_test": 95
+    },
+    "Explosion": {
+      "AP": 0.5320971353825655,
+      "F1_tuned": 0.5118483412322274,
+      "threshold": 0.76,
+      "detection_rate": 0.5,
+      "n_test": 108
+    },
+    "Gunshot": {
+      "AP": 0.5986390264327962,
+      "F1_tuned": 0.576,
+      "threshold": 0.6,
+      "detection_rate": 0.675,
+      "n_test": 160
+    },
+    "Glass": {
+      "AP": 0.43112290994744107,
+      "F1_tuned": 0.45045045045045046,
+      "threshold": 0.78,
+      "detection_rate": 0.439,
+      "n_test": 57
+    },
+    "Siren": {
+      "AP": 0.8624642230603639,
+      "F1_tuned": 0.805,
+      "threshold": 0.59,
+      "detection_rate": 0.789,
+      "n_test": 204
+    },
+    "Alarm": {
+      "AP": 0.7655964124030105,
+      "F1_tuned": 0.6875,
+      "threshold": 0.43,
+      "detection_rate": 0.673,
+      "n_test": 196
+    }
+  },
+  "confusion_v3": {
+    "Scream": {
+      "Scream": 0.5,
+      "Shout": 0.058,
+      "Crying": 0.038,
+      "Explosion": 0.019,
+      "Gunshot": 0.0,
+      "Glass": 0.0,
+      "Siren": 0.038,
+      "Alarm": 0.0
+    },
+    "Shout": {
+      "Scream": 0.071,
+      "Shout": 0.575,
+      "Crying": 0.018,
+      "Explosion": 0.0,
+      "Gunshot": 0.044,
+      "Glass": 0.0,
+      "Siren": 0.0,
+      "Alarm": 0.009
+    },
+    "Crying": {
+      "Scream": 0.116,
+      "Shout": 0.011,
+      "Crying": 0.611,
+      "Explosion": 0.011,
+      "Gunshot": 0.053,
+      "Glass": 0.011,
+      "Siren": 0.011,
+      "Alarm": 0.0
+    },
+    "Explosion": {
+      "Scream": 0.046,
+      "Shout": 0.019,
+      "Crying": 0.009,
+      "Explosion": 0.5,
+      "Gunshot": 0.352,
+      "Glass": 0.0,
+      "Siren": 0.019,
+      "Alarm": 0.019
+    },
+    "Gunshot": {
+      "Scream": 0.019,
+      "Shout": 0.0,
+      "Crying": 0.0,
+      "Explosion": 0.163,
+      "Gunshot": 0.675,
+      "Glass": 0.025,
+      "Siren": 0.013,
+      "Alarm": 0.013
+    },
+    "Glass": {
+      "Scream": 0.018,
+      "Shout": 0.0,
+      "Crying": 0.0,
+      "Explosion": 0.018,
+      "Gunshot": 0.298,
+      "Glass": 0.439,
+      "Siren": 0.018,
+      "Alarm": 0.088
+    },
+    "Siren": {
+      "Scream": 0.025,
+      "Shout": 0.01,
+      "Crying": 0.0,
+      "Explosion": 0.02,
+      "Gunshot": 0.02,
+      "Glass": 0.01,
+      "Siren": 0.789,
+      "Alarm": 0.181
+    },
+    "Alarm": {
+      "Scream": 0.02,
+      "Shout": 0.01,
+      "Crying": 0.005,
+      "Explosion": 0.026,
+      "Gunshot": 0.061,
+      "Glass": 0.041,
+      "Siren": 0.179,
+      "Alarm": 0.673
+    }
+  },
+  "thresholds": {
+    "tuned": {
+      "Scream": 0.79,
+      "Shout": 0.8,
+      "Crying": 0.91,
+      "Explosion": 0.76,
+      "Gunshot": 0.6,
+      "Glass": 0.78,
+      "Siren": 0.59,
+      "Alarm": 0.43
+    },
+    "safety": {
+      "Scream": 0.79,
+      "Shout": 0.9,
+      "Crying": 0.91,
+      "Explosion": 0.76,
+      "Gunshot": 0.85,
+      "Glass": 0.9,
+      "Siren": 0.59,
+      "Alarm": 0.43
+    }
+  }
+}
